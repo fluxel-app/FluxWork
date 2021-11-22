@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net472</TargetFramework>
+		<RepositoryUrl>https://github.com/fluxel-app/FluxWork/blob/master/LICENSE</RepositoryUrl>
+		<PackageVersion>1.0.0</PackageVersion>
+		<Version>1.0.0</Version>
+		<AssemblyName>FluxWork</AssemblyName>
+		<RootNamespace>FluxWork</RootNamespace>
+		<PackageId>FluxWork</PackageId>
+		<Authors>Fluxel UG</Authors>
+		<Company>FluxWork</Company>
+		<Product>FluxWork</Product>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Title>FluxWork</Title>
+		<Copyright>2020 (c) Fluxel UG</Copyright>
+		<PackageProjectUrl>https://github.com/fluxel-app/FluxWork</PackageProjectUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>hitwork fluxwork</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="PresentationCore" />
+      <Reference Include="PresentationFramework" />
+      <Reference Include="System.Xaml" />
+      <Reference Include="WindowsBase" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="LightInject" Version="6.4.0" />
+      <PackageReference Include="LightInject.Annotation" Version="1.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Page Include="Presentation\View\BaseWindow.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+
+</Project>
