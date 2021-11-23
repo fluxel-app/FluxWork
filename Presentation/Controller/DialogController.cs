@@ -5,7 +5,7 @@ using System.Windows;
 
 namespace FluxWork.Presentation.Controller
 {
-  public abstract class DialogController<TViewModel> : ControllerBase<TViewModel> where TViewModel : IViewModel
+  public abstract class DialogController<TViewModel> : ControllerBase<TViewModel>, IDialogController where TViewModel : IViewModel
   {
     protected DialogController() => this.Dimensions = new DialogDimensions(this.GetType().FullName);
 
@@ -23,4 +23,6 @@ namespace FluxWork.Presentation.Controller
 
     internal event EventHandler<MessageBoxResult> CloseEvent;
   }
+  
+  public interface IDialogController {}
 }

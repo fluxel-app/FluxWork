@@ -3,6 +3,7 @@ using FluxWork.Presentation.Controller;
 using FluxWork.Presentation.ViewModel;
 using FluxWork.Services;
 using System;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -102,6 +103,13 @@ namespace FluxWork.Presentation.View
       });
       baseWindow.ShowDialog();
       return result;
+    }
+
+    public MessageBoxResult Open(IDialogController dialogController)
+    {
+      var viewModelType = dialogController.GetType().BaseType.GenericTypeArguments[0];
+      var method = this.GetType().GetMethods().Single(m => m.Name == "Open" && m.IsGenericMethod);
+      return (MessageBoxResult) method.MakeGenericMethod(viewModelType).Invoke(this, new [] {dialogController});
     }
 
     public void SetDefaultBackgroundImage(Image image, int m, int w, double opacity = 0.1)

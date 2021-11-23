@@ -19,6 +19,7 @@
 		<PackageTags>hitwork fluxwork</PackageTags>
         <PackageLicenseExpression>CC-BY-4.0</PackageLicenseExpression>
         <Description>.NET WPF MVVM-C "Framework" (Eher: Spielwiese)</Description>
+        <LangVersion>9</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
