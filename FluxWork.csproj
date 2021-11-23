@@ -3,8 +3,8 @@
     <PropertyGroup>
         <TargetFramework>net472</TargetFramework>
 		<RepositoryUrl>https://github.com/fluxel-app/FluxWork</RepositoryUrl>
-		<PackageVersion>1.0.1</PackageVersion>
-		<Version>1.0.1</Version>
+		<PackageVersion>1.0.2</PackageVersion>
+		<Version>1.0.2</Version>
 		<AssemblyName>FluxWork</AssemblyName>
 		<RootNamespace>FluxWork</RootNamespace>
 		<PackageId>FluxWork</PackageId>
