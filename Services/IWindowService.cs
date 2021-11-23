@@ -13,6 +13,8 @@ namespace FluxWork.Services
       where TViewModel : IViewModel;
 
     MessageBoxResult Open<TViewModel>(DialogController<TViewModel> dialogController) where TViewModel : IViewModel;
+    
+    MessageBoxResult Open(IDialogController dialogController);
 
     void SetDefaultBackgroundImage(Image image, int m, int w, double opacity = 0.1);
 
