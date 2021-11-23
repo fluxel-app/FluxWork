@@ -32,7 +32,7 @@ namespace FluxWork.Controller
 
     private IEnumerable<Assembly> GetAssemblies()
     {
-      var strings = ((IEnumerable<string>) Directory.GetFiles(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) ?? throw new InvalidOperationException(), "*.dll")).Where<string>((Func<string, bool>) (f => this._assemblyNameFilter == null || this._assemblyNameFilter.IsMatch(Path.GetFileNameWithoutExtension(f)) || Path.GetFileNameWithoutExtension(f) == "HitWork"));
+      var strings = ((IEnumerable<string>) Directory.GetFiles(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) ?? throw new InvalidOperationException(), "*.dll")).Where<string>((Func<string, bool>) (f => this._assemblyNameFilter == null || this._assemblyNameFilter.IsMatch(Path.GetFileNameWithoutExtension(f)) || Path.GetFileNameWithoutExtension(f) == "FluxWork"));
       var assemblyList = new List<Assembly>();
       foreach (var str in strings)
       {

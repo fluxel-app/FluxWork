@@ -2,9 +2,9 @@
 
     <PropertyGroup>
         <TargetFramework>net472</TargetFramework>
-		<RepositoryUrl>https://github.com/fluxel-app/FluxWork/blob/master/LICENSE</RepositoryUrl>
-		<PackageVersion>1.0.0</PackageVersion>
-		<Version>1.0.0</Version>
+		<RepositoryUrl>https://github.com/fluxel-app/FluxWork</RepositoryUrl>
+		<PackageVersion>1.0.1</PackageVersion>
+		<Version>1.0.1</Version>
 		<AssemblyName>FluxWork</AssemblyName>
 		<RootNamespace>FluxWork</RootNamespace>
 		<PackageId>FluxWork</PackageId>
@@ -17,6 +17,8 @@
 		<PackageProjectUrl>https://github.com/fluxel-app/FluxWork</PackageProjectUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>hitwork fluxwork</PackageTags>
+        <PackageLicenseExpression>CC-BY-4.0</PackageLicenseExpression>
+        <Description>.NET WPF MVVM-C "Framework" (Eher: Spielwiese)</Description>
     </PropertyGroup>
 
     <ItemGroup>
