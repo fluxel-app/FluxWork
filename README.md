@@ -1,8 +1,8 @@
 # FluxWork
 
-.NET WPF MVVM-C "Framework" (Eher: Spielwiese)
-
 ![Nuget](https://img.shields.io/nuget/v/FluxWork)
+
+.NET WPF MVVM-C "Framework" (Eher: Spielwiese)
 
 Ursprünglich: HitWork
 
