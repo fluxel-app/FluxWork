@@ -134,7 +134,19 @@ public void OnSave() {
 
 ### Data
 
-`TODO`
+Die `ControllerBase` enthält zwei überschreibbare Funktionen.
+
+#### `virtual void Initialized()`
+
+In dieser Funktion sollten keine Daten geladen und lediglich der Controller und das ViewModel vorbereitet werden.
+
+#### `virtual void Loaded()`
+
+In dieser Funktion werden Daten geladen und aufbereitet.
+
+#### `ObservableDataSource<TItem>`
+
+Die `ObservableDataSource<TItem>` ist von der `ObservableCollection<TItem>` abgeleitet. Sie erwartet im Konstruktor eine Funktion, welche die Daten zurückgibt, die Si halten soll. Mit der Funktion `void Reload()` wird die Funktion aufgerufen und die DataSource gefüllt. So kann man in der Initialized-Funktion die DataSource vorbereiten und die Funktion angeben und in der Loaded-Funktion die DataSource befüllen lassen.
 
 ## Geschichtsstunde
 
